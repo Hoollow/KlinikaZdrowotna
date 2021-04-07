@@ -1,0 +1,179 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Klinika Leczenia</a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Strona główna<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Kalendarz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Lekarze</a>
+        </li>
+  
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Inne ważne rzeczy<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Recepty</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Nawet nie wiem co wpisać</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+          </div>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+  
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" >
+            <div class="btn-group" mdbDropdown >
+              <mdb-icon fas icon="user" mdbDropdownToggle > </mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+        <div class="container emp-profile">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-img">
+                                    <img src="https://ocdn.eu/pulscms-transforms/1/npnktkqTURBXy83NDI4OWE2NDBlMWU5MTFiN2Q3YTljY2FhOWJjNzEyYy5qcGVnkpUDABTNAmzNAV2TBc0BpM0BLA" alt=""/>
+                                    <div class="file btn btn-lg btn-primary">
+                                        Zmień zdjęcie
+                                        <input type="file" name="file"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="profile-head">
+                                            <h3>
+                                                Mariusz Skoczek
+                                            </h3>                                   
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Informacje</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Recepty</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edytuj profil"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-work">
+                                    <p></p>
+                                    <p>Aktualne skierowania</p>
+                                    <a href="">RTG</a><br/>
+                                    <a href="">Gastrolog</a><br/>
+                                    <a href="">Chirurg</a><br/>
+                                    <p>Recepty</p>
+                                    <a href="">Brak</a><br/>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tab-content profile-tab" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Numer pacjenta:</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>166192</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Imię i Nazwisko:</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Mariusz Skoczek</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Data urodzenia:</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>1 marca 1965r.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Email:</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Skoczkowski@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Adres zamieszkania</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>Olsztyn, ul. Wojska Polskiego 13/2</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Numer Telefonu:</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p>510 234 233</p>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>           
+                </div>
+      </div>
+    </div>
+  </div>
